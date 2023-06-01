@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
 
 app.get("/user", (req, res) => {
   const user = { id: 123, fname: "Andy", lname: "Alexander", animal: "monkey" };
-  res.json("Test.");
+  res.json(user);
 });
 
 app.listen(3000, () => console.log("Example app is listening on port 3000."));
